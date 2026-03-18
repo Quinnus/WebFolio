@@ -19,11 +19,12 @@ p.taglinetext {
     padding: 0 0 2rem 0;
 }
 
-#aboutsection {
+section#aboutsection {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem 0 4rem 0;
+    padding: 0;
+    margin-bottom: 3rem;
 
 
 }
@@ -35,7 +36,6 @@ p.taglinetext {
 .about-me {
     display: flex;
     flex-direction: row-reverse;
-    margin: 2rem 0 2rem 0;
     align-items: center;
 
 }
@@ -75,10 +75,11 @@ p.taglinetext {
         border: 2px solid var(--accent);
     }
 
-    #aboutsection {
+    section#aboutsection {
         display: flex;
+        padding: 0;
+        margin-bottom: 1rem;
 
-        padding: 4rem 0 2rem 0;
     }
 
 }

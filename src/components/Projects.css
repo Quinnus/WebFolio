@@ -46,7 +46,6 @@
     color: var(--accent);
     padding: 0.3rem 1rem;
     border-radius: 2rem;
-    font-size: 1.2rem;
 }
 
 .card-content a {

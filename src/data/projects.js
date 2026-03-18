@@ -1,7 +1,7 @@
 const myProjects = [
     {
         id: "001",
-        name: "Chess",
+        name: "Homelab",
         desc: "A simple chess board game, with on screen graphics",
         stack: ["JavaScript", "React", "Vite"],
         url: "https://mychessgame.com",
@@ -11,7 +11,7 @@ const myProjects = [
     },
     {
         id: "002",
-        name: "Recycler",
+        name: "Yes We Can",
         desc: "A mobile first recycling support app",
         stack: ["JavaScript", "React", "Vite"],
         url: "https://myrecycling.com",
@@ -41,7 +41,7 @@ const myProjects = [
     },
     {
         id: "005",
-        name: "Tradde Connect",
+        name: "Trade Connect",
         desc: "Where Trades connect",
         stack: ["JavaScript", "CSS", "HTML"],
         url: "https://myrecycling.com",

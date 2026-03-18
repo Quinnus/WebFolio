@@ -1,5 +1,5 @@
 #skillssection {
-    padding: 4rem 0;
+    padding: 0 0 2rem 0;
 }
 
 .skills-list {
@@ -8,6 +8,8 @@
     gap: 1.4rem;
     list-style: none;
     margin-top: 2rem;
+    margin-bottom: 4rem;
+
 
 }
 
@@ -17,7 +19,6 @@
     border-left: 3px solid var(--surface);
     padding: 0.8rem 1.5rem;
     border-radius: 0.5rem;
-    font-size: 1.4rem;
     transition: all 0.2s ease;
 
 }
@@ -29,4 +30,12 @@
     transition: all 0.2s ease;
 
 
+}
+
+
+@media (max-width: 767px) {
+    .skills-list {
+        margin-bottom: 3rem;
+
+    }
 }

@@ -1,116 +1,27 @@
-nav {
-
+.nav-links {
+    font-family: "Orbitron", system-ui, sans-serif;
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: var(--nav-bar);
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.8);
-    flex-wrap: wrap;
-    font-size: 2rem;
     margin-bottom: 2rem;
-    color: var(--accent);
-}
-
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
     padding: 1rem;
-    width: 100%;
-}
-
-.dropdownmenu {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
     justify-content: center;
+    align-items: center;
+
 }
 
-button.hamburgerbutton {
-    width: fit-content;
-    border: none;
-    background: none;
-    padding-top: 0.2rem;
-    outline: none;
-}
-
-button.burgermenuicon {
-    width: fit-content;
-    border: none;
-    background: none;
-    padding-top: 0.2rem;
-    outline: none;
+.logo {
+    font-size: 4.8rem;
+    font-weight: bold;
     color: var(--accent);
+    text-align: center;
 }
 
-.nav-open {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    background-color: var(--nav-bar);
-    width: 100%;
-    justify-content: space-evenly;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.8);
-}
-
-.nav-open a {
-    color: var(--accent);
-    text-decoration: none;
-}
-
-.nav-closed {
-    display: none;
-}
-
-.nav-label {
-    display: none;
-}
-
-nav ul li a svg {
-    width: 2rem;
-    height: 2rem;
-}
 
 @media (min-width: 768px) {
-    nav {
-        font-size: 3rem;
-        color: var(--accent);
-    }
-
-    .nav-closed {
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-    }
-
-    .nav-open {
-        position: static;
-        width: auto;
-        padding: 0;
-        background-color: transparent;
-        box-shadow: none;
-    }
-
-    .nav-closed a, .nav-open a {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        font-size: 1.8rem;
-        color: var(--accent);
-        text-decoration: none;
-    }
-
-    .burgermenuicon {
-        display: none;
-    }
-
-    .burgercloseicon {
-        display: none;
-    }
 
     ul li a svg {
         width: 3rem;
