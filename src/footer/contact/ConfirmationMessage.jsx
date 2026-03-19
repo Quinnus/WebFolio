@@ -1,11 +1,15 @@
+import './ConfirmationMessage.css'
+
 export default function ConfirmationMessage(props) {
 
 
     return (
-        <div role="alert">
+
+        <div className="confirmation">
             <p>Your message has been sucessfully sent</p>
-            <button onClick={props.handleMessageOK}>OK</button>
+            <button className="okbutton" onClick={props.handleMessageOkClick}>OK</button>
         </div>
+
     )
 
 }

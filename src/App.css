@@ -1,9 +1,7 @@
 /*reset*/
 
 *, *::before, *::after {
-
     box-sizing: border-box;
-
 }
 
 * {
@@ -31,8 +29,6 @@
 
     --lh-body: 1.5;
     --lh-header: 1.2;
-    --trans-fast: 0.2s ease;
-
 }
 
 

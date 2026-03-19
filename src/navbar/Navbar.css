@@ -14,7 +14,8 @@
 }
 
 .logo {
-    font-size: 4.8rem;
+
+    font-size: clamp(1.8rem, calc(2.8vw + 1.3rem), 4.8rem);
     font-weight: bold;
     color: var(--accent);
     text-align: center;
@@ -31,4 +32,6 @@
     .nav-label {
         display: inline;
     }
+
+
 }

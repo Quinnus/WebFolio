@@ -2,9 +2,24 @@ import './Footer.css'
 import {FaEnvelope, FaGithub, FaLinkedin, FaSquareWhatsapp} from "react-icons/fa6";
 import {useState} from "react";
 import Modal from "./contact/Modal.jsx";
+import ConfirmationMessage from "./contact/ConfirmationMessage.jsx";
 
 export default function Footer() {
-    const [modalIsVisible, setModalIsVisible] = useState(false);
+    const [modalIsVisible, setModalIsVisible] = useState(false)
+
+
+    function handleSendMessageClick() {
+
+        setModalIsVisible(!modalIsVisible);
+    }
+
+    function handleCancelClick() {
+        setModalIsVisible(false);
+    }
+
+    function handleMessageOkClick() {
+        setModalIsVisible(false);
+    }
 
     function handleGithubClick() {
 
@@ -18,9 +33,6 @@ export default function Footer() {
 
     }
 
-    function handleSendMessageClick() {
-        setModalIsVisible(true);
-    }
 
     return (
         <footer id="social-links">
@@ -51,7 +63,11 @@ export default function Footer() {
                     </button>
                 </div>
             </div>
-            {modalIsVisible && <Modal/>}
+            {modalIsVisible && <Modal
+                handleCancelClick={handleCancelClick}
+                handleMessageOkClick={handleMessageOkClick}
+
+            />}
 
         </footer>
     )

@@ -1,0 +1,24 @@
+.confirmation {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 2rem;
+
+
+}
+
+.okbutton {
+    color: var(--text-muted);
+    background-color: var(--background-color);
+    font-size: 1.6rem;
+    border-radius: 1.6rem;
+    padding: 1rem;
+    align-content: space-between;
+    accent-color: var(--accent);
+    outline-color: var(--accent);
+    width: 16rem;
+}
