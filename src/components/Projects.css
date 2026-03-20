@@ -6,6 +6,8 @@
     padding: 2rem;
     margin-bottom: 3rem;
     align-items: center;
+    will-change: transform, opacity;
+    contain: layout;
 }
 
 .card-left .project-img {
@@ -14,11 +16,18 @@
 
 .card-left {
     flex-direction: row;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 
 }
 
 .card-right {
     flex-direction: row-reverse;
+    padding-right: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
 }
 
 
@@ -27,6 +36,10 @@
     border-radius: 1rem;
     border: 2px solid var(--accent);
 
+}
+
+p.projectname {
+    margin-bottom: 1.2rem;
 }
 
 .card-content {
@@ -49,19 +62,6 @@
     border-radius: 2rem;
 }
 
-.projectname {
-    margin-bottom: 1rem;
-}
-
-.card-content a {
-    text-decoration: none;
-    color: var(--text-muted)
-}
-
-.card-content a:hover {
-    text-decoration: none;
-    color: var(--accent)
-}
 
 .tech-badge:hover {
     transition: all 0.2s ease;
@@ -86,7 +86,7 @@
     }
 
     .project-img {
-        margin-bottom: 2rem;
+        margin-bottom: 2rem !important;
         margin-right: 0 !important;
     }
 }

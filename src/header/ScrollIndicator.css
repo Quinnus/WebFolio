@@ -1,0 +1,10 @@
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px; /* Adjust thickness here */
+    background: var(--accent); /* Uses your teal/mint color */
+    transform-origin: 0%; /* Crucial: ensures it grows from left to right */
+    z-index: 9999;
+}

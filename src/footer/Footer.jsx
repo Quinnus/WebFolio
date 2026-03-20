@@ -2,7 +2,6 @@ import './Footer.css'
 import {FaEnvelope, FaGithub, FaLinkedin, FaSquareWhatsapp} from "react-icons/fa6";
 import {useState} from "react";
 import Modal from "./contact/Modal.jsx";
-import ConfirmationMessage from "./contact/ConfirmationMessage.jsx";
 
 export default function Footer() {
     const [modalIsVisible, setModalIsVisible] = useState(false)

@@ -1,9 +1,8 @@
 import About from './components/About.jsx'
 import Projects from './components/Projects.jsx'
 import Skills from './components/Skills.jsx'
-// import Contact from './contact/Contact.jsx'
 import Header from './header/Header.jsx'
-import Footer from "./footer/Footer.jsx";
+import Footer from './footer/Footer.jsx';
 
 function App() {
 
