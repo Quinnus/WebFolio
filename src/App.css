@@ -92,8 +92,7 @@ ul {
 }
 
 .container {
-    /* Removes bottom padding to prevent double-spacing */
-    padding: 4rem 2rem 2rem 2rem;
+    padding: 4rem 2rem 0 2rem;
     width: 90%;
     max-width: 800px;
     margin: 0 auto;
@@ -114,8 +113,8 @@ section {
 @media (max-width: 767px) {
 
     .container {
-        /* Removes bottom padding to prevent double-spacing */
-        padding: 2rem 2rem 2rem 2rem;
+
+        padding: 2rem 2rem 0 2rem;
 
     }
 

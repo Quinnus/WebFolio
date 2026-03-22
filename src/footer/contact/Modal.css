@@ -1,4 +1,3 @@
-
 .modalOverlay {
     position: fixed;
     top: 0;
@@ -63,12 +62,14 @@ select {
 
 }
 
-footer.actionbuttons {
+.actionButtons {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
-.actionButtons button {
+div .actionButtons button {
     color: var(--text);
     background-color: var(--background-color);
     font-size: 1.6rem;
@@ -78,6 +79,7 @@ footer.actionbuttons {
     accent-color: var(--accent);
     outline-color: var(--accent);
     width: 16rem;
+
 }
 
 div button:hover {

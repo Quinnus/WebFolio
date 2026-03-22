@@ -13,6 +13,10 @@ export default function Skills() {
         <section id="skillssection">
             <div className="container">
                 <h2>Skills & capabilities</h2>
+                <p>I have a somewhat unusual background for a software developer. The skills I list below are a mix
+                    of old and new. Having worked in senior positions in a large multinational, I've lead teams, coached
+                    individuals, and managed senior stakeholders. The newer stuff: I was awarded a 1.1 in
+                    Software Development from Maynooth University in 2026.</p>
                 <div className="organized-rows">
                     {categories.map((cat) => (
                         <div key={cat.id} className="skill-row">

@@ -3,8 +3,8 @@
     background: var(--surface);
     border: 2px solid var(--border);
     border-radius: 2rem;
-    padding: 3rem;
-    margin-bottom: 4rem;
+    padding: 3rem 3rem 3rem 3rem;
+    margin-bottom: 2.5rem;
     align-items: center;
     will-change: transform, opacity;
     contain: layout;
@@ -50,7 +50,8 @@ p.projectname {
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
-    margin: 2rem 0 1rem 0;
+    margin-top: 2rem;
+    
 }
 
 .tech-badge {
@@ -81,6 +82,7 @@ p.projectname {
 
     .project-img {
         margin-bottom: 2rem !important;
+        margin-left: 0 !important;
         margin-right: 0 !important;
     }
 }
@@ -90,17 +92,10 @@ p.projectname {
     margin-bottom: 0;
 }
 
-.tech-stack {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    /* Tightened top margin to 1.5rem */
-    margin: 1.5rem 0 1rem 0;
-}
 
 #projectssection .card-left:last-of-type,
 #projectssection .card-right:last-of-type {
-    margin-bottom: 0; /* Prevents double-spacing at the bottom of the section */
+    margin-bottom: 1rem; /* Prevents double-spacing at the bottom of the section */
 }
 
 #projectssection h2 {

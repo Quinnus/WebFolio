@@ -3,16 +3,13 @@
     background: var(--surface);
     border: 2px solid var(--border);
     border-radius: 2rem;
-    padding: 3rem 3rem 3rem 2rem;
+    padding: 3rem;
     margin-bottom: 3rem;
     align-items: center;
     will-change: transform, opacity;
     contain: layout;
 }
 
-.card-left .project-img {
-    margin: 0 2.4rem 0 1rem;
-}
 
 .card-left {
     flex-direction: row;
@@ -75,8 +72,5 @@ p.projectname {
         padding: 0;
     }
 
-    .project-img {
-        margin-bottom: 2rem !important;
-        margin-right: 0 !important;
-    }
+
 }

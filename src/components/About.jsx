@@ -29,11 +29,12 @@ export default function About() {
                             building great software and actually understanding the commercial 'why' behind it.
                             Whether it's navigating the chaos of M&A integration/separation or just making sure a
                             project stays
-                            on track, I like being the person who can talk to both the dev team and the business
+                            on track, I like being the person who can talk to both the dev team and business
                             stakeholders without anything getting lost in translation.
                         </p><br/>
-                        <p className="taglinetext">*that means the fancy bit (web-pages) and the techy bit (behind the
-                            scenes)</p>
+                        <p className="taglinetext"> &#123;*that means the fancy bit (web-pages) and the techy bit
+                            (behind the
+                            scenes)&#125;</p>
                     </div>
                 </div>
             </div>
