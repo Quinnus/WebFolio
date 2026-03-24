@@ -26,12 +26,15 @@ const myProjects = [
     },
     {
         id: "003",
-        name: "Tic-Tac-Toe",
-        desc: "A rite of passage for most React newcomers is the Tic-Tac-Toe demo that forms part of the introductory training.  " +
-            "Here I've updated the basic game with sound, colourful graphic and additional moves and win/lose logic.",
-        stack: ["Java", "CSS", "HTML"],
+        name: "Calculator-Neu",
+        desc: "A fun project to build a functioning calculator.  " +
+            "This started as a simple web-app, then I decided to style the buttons using neumorphic design principles.  " +
+            "This is surprisingly easy to achieve with CSS, using a combination of inner and outer box-shadows.  " +
+            "Having completed the logic and design, I built the app using Tauri to produce a smaller package than an Electron app, " +
+            "for example.  The result: Looks - stunning, Practicality - could do better!",
+        stack: ["CSS", "JavaScript", "HTML", "Rust"],
 
-        image: "/screenshots/TTT.png",
+        image: "/screenshots/calc.png",
 
 
     },
