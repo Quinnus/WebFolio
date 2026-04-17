@@ -27,7 +27,7 @@ const myProjects = [
     {
         id: "003",
         name: "Simon",
-        desc: "Continuing to recreate classic games, this time 80's favourite Simon.  " +
+        desc: "My plan is to recreate every classic game (maybe...), this time its 80's favourite Simon.  " +
             "This was less complex than Hangman, requiring a relatively simple setup of randomly generated numbers corresponding to a colour.  These were then matched to corresponding (ai-generted) images, to show the quadrants lighting up.  Aparrently the original game maxxed out at a sequence of colours.  This will keep going forever, probably....  Try it at https://simon-pivt.vercel.app",
         stack: ["CSS", "JavaScript", "HTML", "Rust"],
 
