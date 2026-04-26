@@ -23,7 +23,7 @@ export default function About() {
                         <div className="pic-mobile">
                             <img id="selfie-small" src={profilePic} alt="greyscale picture of John"/>
                         </div>
-                        <p> Hey, thanks for stopping by. I'm a full-stack* software developer based in Dublin.
+                        <p> Hey, thanks for stopping by. I'm a full-stack software developer based in Dublin.
                             After 20 years in the multinational world, I decided to take a different path.
                             I’ve always loved the tech side of things, so now I’m focused on bridging the gap between
                             building great software and actually understanding the commercial 'why' behind it.
@@ -32,9 +32,6 @@ export default function About() {
                             on track, I like being the person who can talk to both the dev team and business
                             stakeholders without anything getting lost in translation.
                         </p><br/>
-                        <p className="taglinetext"> &#123;*that means the fancy bit (web-pages) and the techy bit
-                            (behind the
-                            scenes)&#125;</p>
                     </div>
                 </div>
             </div>
