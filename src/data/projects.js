@@ -22,12 +22,10 @@ const myProjects = [
     },
     {
         id: "003",
-        name: "Simon",
-        desc: "My plan is to recreate every classic game (maybe...), this time its 80s favourite Simon.  " +
-            "This was less complex than Hangman, requiring a relatively simple setup of randomly generated numbers corresponding to a colour.  These were then matched to corresponding (ai-generated) images, to show the quadrants lighting up.  Apparently the original game was limited to a maximum sequence of 31 colours.  This will keep going forever, probably....",
-        url: "https://simon-pivt.vercel.app",
-        stack: ["JavaScript", "React", "CSS", "HTML"],
-        image: "/screenshots/simon.png",
+        name: "Better Pair",
+        desc: "This was an interesting project.  I'd started using Claude Code to see what everyone was so excited about, and found it incredibly fun and useful.  I'd started working on a wine pairing app for my partner who works in the drinks industry.  Having pulled something together, I decided to experiment, and ask Claude to create a native iOS app from scratch.  Which it did!",
+        stack: ["Claude Code", "Swift", "SwiftData", "Xcode"],
+        image: "/screenshots/pairs.png",
 
 
     },
@@ -51,7 +49,6 @@ const myProjects = [
             "The idea came from helping people without transport visit recycling depots " +
             "- the friend with a car or van who would provide a lift.  " +
             "From there it went on to include various local tradespeople, including the original 'man-with-a-van'.",
-        url: "https://trade-connect.help",
         stack: ["JavaScript", "React", "Scrum"],
         image: "/screenshots/tc.png",
 
