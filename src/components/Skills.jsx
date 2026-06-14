@@ -1,4 +1,5 @@
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
+import { useRef, useEffect } from 'react';
 import mySkills from '../data/skills.js';
 import './Skills.css';
 
@@ -22,38 +23,47 @@ export default function Skills() {
                         <div key={cat.id} className="skill-row">
                             <motion.span
                                 className="row-label"
-                                initial={{opacity: 0, x: -60}} // Starts 20px to the left
+                                initial={{opacity: 0, x: -60}}
                                 whileInView={{opacity: 1, x: 0}}
-                                viewport={{once: false, amount: 0.5}}
+                                viewport={{once: true, amount: 0.5}}
                                 transition={{duration: 0.6, ease: "easeOut"}}
                             >
                                 {cat.label}
                             </motion.span>
-                            <ul className="skills-list">
-                                {mySkills
-                                    .filter(s => s.category === cat.id)
-                                    .map((skill, index) => (
-                                        <motion.li
-                                            key={skill.id}
-                                            className="skill-badge"
-                                            initial={{opacity: 0, y: -20}} // Reduced drop distance to prevent overlap
-                                            whileInView={{opacity: 1, y: 0}}
-                                            viewport={{once: false, amount: 0.1}}
-                                            transition={{
-                                                type: "spring",
-                                                stiffness: 150, // Higher stiffness = faster snap
-                                                damping: 18,    // Higher damping = less "jiggling"
-                                                delay: index * 0.15 // Increased delay to 0.15s to clear space
-                                            }}
-                                        >
-                                            {skill.name}
-                                        </motion.li>
-                                    ))}
-                            </ul>
+                            <SkillList skills={mySkills.filter(s => s.category === cat.id)} />
                         </div>
                     ))}
                 </div>
             </div>
         </section>
+    );
+}
+
+function SkillList({ skills }) {
+    const ref = useRef(null);
+
+    useEffect(() => {
+        const el = ref.current;
+        if (!el) return;
+        const observer = new IntersectionObserver(
+            ([entry]) => { if (entry.isIntersecting) { el.classList.add('skills-visible'); observer.disconnect(); } },
+            { threshold: 0.2 }
+        );
+        observer.observe(el);
+        return () => observer.disconnect();
+    }, []);
+
+    return (
+        <ul className="skills-list" ref={ref}>
+            {skills.map((skill, index) => (
+                <li
+                    key={skill.id}
+                    className="skill-badge"
+                    style={{ animationDelay: `${index * 0.08}s` }}
+                >
+                    {skill.name}
+                </li>
+            ))}
+        </ul>
     );
 }

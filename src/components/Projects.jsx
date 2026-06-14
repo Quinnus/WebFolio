@@ -33,7 +33,7 @@ export default function Projects() {
                         <div className="card-content">
                             <p className="projectname"><strong>Project name: </strong> {p.name}</p>
                             <p><strong>Description: </strong>{p.desc}</p>
-                            <p><a href={p.url} target="_blank" rel="noopener noreferrer">Have a look here</a></p>
+                            {p.url && <p><a href={p.url} target="_blank" rel="noopener noreferrer">Have a look here</a></p>}
                             <div className="tech-stack">
                                 {p.stack.map((t) => (
                                     <span key={t} className="tech-badge">

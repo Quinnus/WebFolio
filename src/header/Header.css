@@ -9,17 +9,52 @@
     background-color: var(--nav-bar);
     box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.8);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 0;
-    padding: 1.5rem 0;
+    padding: 1.5rem 3rem;
+    gap: 2rem;
 }
 
 .logo {
     font-size: clamp(1.5rem, calc(2.8vw + 1.1rem), 4.8rem);
     font-weight: bold;
     color: var(--accent);
-    text-align: center;
     white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.nav-items {
+    display: flex;
+    gap: 2.4rem;
+    align-items: center;
+}
+
+.nav-item {
+    font-family: var(--font-heading), system-ui, sans-serif;
+    font-size: clamp(1.1rem, calc(0.6vw + 0.9rem), 1.4rem);
+    color: var(--text-muted);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+}
+
+.nav-item:hover,
+.nav-item--active {
+    color: var(--accent);
+}
+
+@media (max-width: 600px) {
+    .nav-links {
+        flex-direction: column;
+        padding: 1.2rem 2rem;
+        gap: 1rem;
+    }
+
+    .nav-items {
+        gap: 1.6rem;
+    }
 }
 
